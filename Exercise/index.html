@@ -53,7 +53,7 @@
     let svg = d3.select("svg");
     
     const min_num =0;
-    const max_num = 2220;
+    const max_num = 2800;
     // path generator
     const path = d3.geoPath();
 
@@ -65,7 +65,7 @@
         d3.csv(fileName).then(function (data)
         {
             // data dimensions
-            let m= data.width, n= data.height;
+            let m= 50, n= 50;
 
             // Step 2 convert data into 1D list
             let values_T= [];
